@@ -1,11 +1,13 @@
 @extends('layouts.master')
 
 @section('title')
-    ERD
+    Welcome to HobbyLinkIndo!
 @endsection
 
 @section('content')
-<img src="/images/fp_sanber_laravel.png" alt="ERD Cast">
+<div class="d-flex justify-content-center">
+    <img src="{{ asset('images/logo1.png') }}" alt="Logo" class="w-75 m-auto">
+</div>
 @endsection
 
 @push('scripts')

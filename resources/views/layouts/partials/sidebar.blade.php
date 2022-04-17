@@ -1,10 +1,10 @@
 <div class="main-sidebar">
   <aside id="sidebar-wrapper">
     <div class="sidebar-brand">
-      <a href="index">HobbyLinkIndo</a>
+      <a href="{{route('item.index')}}">HobbyLinkIndo</a>
     </div>
     <div class="sidebar-brand sidebar-brand-sm">
-      <a href="index">HLI</a>
+      <a href="{{route('item.index')}}">HLI</a>
     </div>
     <ul class="sidebar-menu">
         <li class="menu-header">Dashboard</li>  
