@@ -39,12 +39,14 @@
                                 <td>{{$value->name}}</td>
                                 <td>
                                     <a href="/category/{{$value->id}}" class="btn btn-info">Show</a>
+                                    @auth
                                     <a href="/category/{{$value->id}}/edit" class="btn btn-warning">Edit</a>
                                     <form action="/category/{{$value->id}}" method="POST" style="display:inline;">
                                         @csrf
                                         @method('DELETE')
                                         <input type="submit" class="btn btn-danger my-1" value="Delete">
                                     </form>
+                                    @endauth
                                 </td>
                             </tr>
                         @empty

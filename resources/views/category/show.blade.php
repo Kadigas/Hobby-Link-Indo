@@ -21,7 +21,7 @@
             <img class="card-img-top" src="{{asset('images/'.$temp->thumbnail)}}" alt="Card image cap ">
             <div class="card-body ">
                 <h5 class="card-title mb-3">{{$temp->name}}</h5>
-                <h6 class="card-subtitle mb-3">¥ {{$temp->price}}</h6>
+                <h6 class="card-subtitle mb-3">Rp{{$temp->price}}</h6>
                 </p>                
                 @auth
                 <form action="{{route('item.destroy', $temp->id)}}" method="POST">

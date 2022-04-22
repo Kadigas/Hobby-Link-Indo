@@ -28,8 +28,6 @@ Route::resource('profile', 'App\Http\Controllers\ProfileController')->only([
 
 Route::resource('item', 'App\Http\Controllers\ItemController');
 
-// CRUD Category
-// Menambahkan resourceful route
 Route::resource('category', 'App\Http\Controllers\CategoryController');
 
 Route::get('/add-to-cart/{item}', 'App\Http\Controllers\CartController@add')->name('cart.add')->middleware('auth');
